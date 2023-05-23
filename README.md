@@ -1,5 +1,10 @@
 ### Hi there 👋
 
+<h2>My tech stack 📚</h2>
+
+![Java](https://img.shields.io/badge/-java-brightgreen)
+![Spring](https://img.shields.io/badge/-Spring-orange)
+
 <!--
 **BeomJunPark12/BeomJunPark12** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
