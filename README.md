@@ -2,8 +2,8 @@
 
 <h2>My tech stack 📚</h2>
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-#F7DF1E)
-![React](https://img.shields.io/badge/-React-#61DAFB)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E)
+![React](https://img.shields.io/badge/-React-61DAFB)
 
 <!--
 **BeomJunPark12/BeomJunPark12** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
