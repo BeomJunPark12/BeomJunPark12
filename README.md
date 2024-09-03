@@ -2,7 +2,7 @@
 
 <h2>My tech stack 📚</h2>
 
-![Java](https://img.shields.io/badge/-java-brightgreen)
+![JavaScript](https://img.shields.io/badge/-JavaScript-brightgreen)
 ![Spring](https://img.shields.io/badge/-Spring-orange)
 
 <!--
