@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Form</title>
+		<link
+			rel="stylesheet"
+			href="../assets/css/common.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../assets/css/wsg.css"
+		/>
+	</head>
+	<body>
+		<div class="wrap">
+			<header class="wsg-header">
+				<h1><a href="../index.html">범준 WSG</a></h1>
+				<nav>
+					<ul>
+						<li class="on"><a href="../pages/wsg.html">Web Style Guide</a></li>
+					</ul>
+				</nav>
+			</header>
+			<ul class="guide-menu">
+				<li>
+					<a href="color.html">Color</a>
+				</li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="button.html">Button</a></li>
+				<li>
+					<a href="icon.html">Icon</a>
+				</li>
+				<li>
+					<a
+						href="form.html"
+						class="on"
+						>Form</a
+					>
+				</li>
+			</ul>
+
+			<div class="guide-container">
+				<section class="sample form-page">
+					<h3 class="h3Typo tit">Form</h3>
+					<div class="sample-content">
+						<h4 class="h4Typo">input_type1</h4>
+						<div class="box-input">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="text"
+									placeholder="placeholder"
+								/>
+							</div>
+						</div>
+
+						<!-- Readonly -->
+						<div class="box-input">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="text"
+									readonly
+									value="Readonly"
+								/>
+							</div>
+						</div>
+
+						<!-- Disabled -->
+						<div class="box-input">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="text"
+									disabled
+									value="Disabled"
+								/>
+							</div>
+						</div>
+
+						<!-- Error -->
+						<div class="box-input error">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="text"
+									value="Error"
+								/>
+							</div>
+							<span class="noti"
+								><span class="message">Error Message</span></span
+							>
+						</div>
+
+						<!-- Sucess -->
+						<div class="box-input success">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="text"
+									value="Success"
+								/>
+							</div>
+							<span class="noti"
+								><span class="message">Success Message</span></span
+							>
+						</div>
+
+						<!-- Password -->
+						<div class="box-input">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input">
+								<input
+									type="password"
+									placeholder="password"
+								/>
+								<span class="btn-box">
+									<button type="button"><span class="ic_eye"></span></button>
+								</span>
+							</div>
+						</div>
+
+						<div class="box-input">
+							<label
+								for="input1"
+								class="labels"
+							></label>
+							<div class="text-input"></div>
+						</div>
+					</div>
+
+					<div class="sample-content">
+						<h4 class="h4Typo">textarea_type1</h4>
+
+						<!-- Default -->
+						<div class="textarea-box">
+							<label
+								for=""
+								class="labels"
+							></label>
+							<textarea placeholder="placeholder"></textarea>
+							<div class="limit-text"><span>0</span>/<span>2000</span></div>
+						</div>
+						<!-- Default -->
+
+						<!-- Readonly -->
+						<div class="textarea-box">
+							<label
+								for=""
+								class="labels"
+							></label>
+							<textarea readonly>Readonly</textarea>
+							<div class="limit-text"><span>0</span>/<span>2000</span></div>
+						</div>
+						<!-- Readonly -->
+
+						<!-- Disabled -->
+						<div class="textarea-box">
+							<label
+								for=""
+								class="labels"
+							></label>
+							<textarea disabled>Disabled</textarea>
+							<div class="limit-text"><span>0</span>/<span>2000</span></div>
+						</div>
+						<!-- Disabled -->
+
+						<!-- Error -->
+						<div class="textarea-box error">
+							<label
+								for=""
+								class="labels"
+							></label>
+							<textarea>Error</textarea>
+							<div class="limit-text">
+								<div class="noti">
+									<span class="message">Error Message</span>
+								</div>
+								<div><span>0</span>/<span>2000</span></div>
+							</div>
+						</div>
+						<!-- Error -->
+
+						<!-- Success -->
+						<div class="textarea-box success">
+							<label
+								for=""
+								class="labels"
+							></label>
+							<textarea>Success</textarea>
+							<div class="limit-text">
+								<div class="noti">
+									<span class="message">Success Message</span>
+								</div>
+								<div><span>0</span>/<span>2000</span></div>
+							</div>
+						</div>
+						<!-- Success -->
+					</div>
+
+					<div class="sample-content">
+						<h4 class="h4Typo">select_type1</h4>
+						<div class="sample-content">
+							<div class="combobox-wrap">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Placeholder</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Focus -->
+							<div class="combobox-wrap">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Focus</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Focus -->
+
+							<!-- Readonly -->
+							<div class="combobox-wrap readonly">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Readonly</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Readonly -->
+
+							<!-- Disabled -->
+							<div class="combobox-wrap disabled">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Disabled</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Disabled -->
+
+							<!-- Error -->
+							<div class="combobox-wrap error">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Error</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="noti"
+									><span class="message">Error message</span></span
+								>
+							</div>
+							<!-- Error -->
+
+							<!-- Success -->
+							<div class="combobox-wrap success">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Success</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="noti"
+									><span class="message">Success message</span></span
+								>
+							</div>
+							<!-- Success -->
+
+							<!-- slds-is-open -->
+							<div class="combobox-wrap">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<span
+																class="slds-truncate"
+																id="combobox-value-id-93"
+																>Reports</span
+															>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+													<div
+														id="listbox-id-4"
+														class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+														role="listbox"
+														aria-label="{{Placeholder for Dropdown Items}}"
+														tabindex="0"
+														aria-busy="false"
+													>
+														<ul
+															class="slds-listbox slds-listbox_vertical"
+															role="presentation"
+														>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option716"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<span
+																		class="slds-media__figure slds-listbox__option-icon"
+																	></span>
+																	<span class="slds-media__body">
+																		<span
+																			class=""
+																			title="Accounts"
+																			>Accounts</span
+																		>
+																	</span>
+																</div>
+															</li>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option717"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<span
+																		class="slds-media__figure slds-listbox__option-icon"
+																	></span>
+																	<span class="slds-media__body">
+																		<span
+																			class=""
+																			title="Reports"
+																			>Reports</span
+																		>
+																	</span>
+																</div>
+															</li>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option718"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<span
+																		class="slds-media__figure slds-listbox__option-icon"
+																	></span>
+																	<span class="slds-media__body">
+																		<span
+																			class=""
+																			title="Contacts"
+																			>Contacts</span
+																		>
+																	</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="combobox-wrap">
+								<div class="text-input">
+									<div class="slds-form-element">
+										<label
+											class="slds-form-element__label"
+											for="combobox-id-2"
+											id="combobox-label-id-130"
+										></label>
+										<div class="slds-form-element__control">
+											<div class="slds-combobox_container">
+												<div
+													class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+												>
+													<div
+														class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+														role="none"
+													>
+														<div
+															role="combobox"
+															tabindex="0"
+															class="slds-input_faux slds-combobox__input slds-has-focus type-checkbox"
+															aria-labelledby="combobox-label-id-130"
+															id="combobox-id-2-selected-value"
+															aria-controls="listbox-id-4"
+															aria-expanded="true"
+															aria-haspopup="listbox"
+														>
+															<div class="check-list">
+																<span>Option 2</span>
+																<span>Option 3</span>
+															</div>
+														</div>
+														<span
+															class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right"
+														>
+															<svg
+																class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default"
+																aria-hidden="true"
+															>
+																<use
+																	xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"
+																></use>
+															</svg>
+														</span>
+													</div>
+													<div
+														id="listbox-id-4"
+														class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+														role="listbox"
+														aria-label="{{Placeholder for Dropdown Items}}"
+														tabindex="0"
+														aria-busy="false"
+													>
+														<ul
+															class="slds-listbox slds-listbox_vertical"
+															role="presentation"
+														>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option716"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<div class="checkbox-wrap">
+																		<label for="check1">
+																			<input
+																				type="checkbox"
+																				id="check1"
+																			/>
+																			<em>Option 1</em>
+																		</label>
+																	</div>
+																</div>
+															</li>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option717"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<div class="checkbox-wrap">
+																		<label for="check2">
+																			<input
+																				type="checkbox"
+																				id="check2"
+																			/>
+																			<em>Option 2</em>
+																		</label>
+																	</div>
+																</div>
+															</li>
+															<li
+																role="presentation"
+																class="slds-listbox__item"
+															>
+																<div
+																	id="option718"
+																	class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+																	role="option"
+																>
+																	<span
+																		class="slds-media__figure slds-listbox__option-icon"
+																	></span>
+																	<div class="checkbox-wrap">
+																		<label for="check3">
+																			<input
+																				type="checkbox"
+																				id="check3"
+																			/>
+																			<em>Option 3</em>
+																		</label>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- slds-is-open -->
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
