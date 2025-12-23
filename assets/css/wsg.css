@@ -414,4 +414,7 @@
 	.guide-menu {
 		width: 100vw;
 	}
+	.guide-container {
+		margin-top: 20px;
+	}
 }
