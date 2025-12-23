@@ -399,3 +399,19 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+@media (max-width: 768px) {
+	.wrap {
+		min-width: unset;
+	}
+	.button-types-row {
+		flex-direction: column;
+	}
+	.form-page {
+		grid-template-columns: 1fr;
+	}
+	.wsg-header,
+	.guide-menu {
+		width: 100vw;
+	}
+}
